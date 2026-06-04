@@ -82,7 +82,6 @@ const pokemonList = [
 "Dratini","Dragonair","Dragonite",
 "Mewtwo",
 "Mew",
-// GEN 2
 "Chikorita","Bayleef","Meganium",
 "Cyndaquil","Quilava","Typhlosion",
 "Totodile","Croconaw","Feraligatr",
@@ -151,7 +150,6 @@ const pokemonList = [
 "Lugia",
 "Ho-Oh",
 "Celebi",
-// GEN 3
 "Treecko","Grovyle","Sceptile",
 "Torchic","Combusken","Blaziken",
 "Mudkip","Marshtomp","Swampert",
@@ -227,7 +225,6 @@ const pokemonList = [
 "Rayquaza",
 "Jirachi",
 "Deoxys",
-// GEN 4
 "Turtwig","Grotle","Torterra",
 "Chimchar","Monferno","Infernape",
 "Piplup","Prinplup","Empoleon",
@@ -299,7 +296,6 @@ const pokemonList = [
 "Darkrai",
 "Shaymin",
 "Arceus",
-// GEN 5
 "Victini",
 "Snivy","Servine","Serperior",
 "Tepig","Pignite","Emboar",
@@ -382,7 +378,6 @@ const pokemonList = [
 "Keldeo",
 "Meloetta",
 "Genesect",
-// GEN 6
 "Chespin","Quilladin","Chesnaught",
 "Fennekin","Braixen","Delphox",
 "Froakie","Frogadier","Greninja",
@@ -422,7 +417,6 @@ const pokemonList = [
 "Diancie",
 "Hoopa",
 "Volcanion",
-// GEN 7
 "Rowlet","Dartrix","Decidueye",
 "Litten","Torracat","Incineroar",
 "Popplio","Brionne","Primarina",
@@ -478,7 +472,6 @@ const pokemonList = [
 "Blacephalon",
 "Zeraora",
 "Meltan","Melmetal",
-// GEN 8
 "Grookey","Thwackey","Rillaboom",
 "Scorbunny","Raboot","Cinderace",
 "Sobble","Drizzile","Inteleon",
@@ -539,7 +532,6 @@ const pokemonList = [
 "Sneasler",
 "Overqwil",
 "Enamorus",
-// GEN 9
 "Sprigatito","Floragato","Meowscarada",
 "Fuecoco","Crocalor","Skeledirge",
 "Quaxly","Quaxwell","Quaquaval",

@@ -132,8 +132,10 @@ const ts1 = new TomSelect(`#player1-${index}`, {
       const status = loadStatus(index);
 
       updateDisplay(index, "1", value, status);
+    },
 
-      scheduleRefresh(); // 👈 ESSENTIAL
+    onDropdownOpen: function() {
+        refreshSingleSelect(this);
     }
 });
 
@@ -152,8 +154,10 @@ const ts2 = new TomSelect(`#player2-${index}`, {
       const status = loadStatus(index);
 
       updateDisplay(index, "2", value, status);
+    },
 
-      scheduleRefresh(); // 👈 ESSENTIAL
+    onDropdownOpen: function() {
+        refreshSingleSelect(this);
     }
 });
 
@@ -270,7 +274,6 @@ function setStatus(index, status) {
 
   syncButtons(index, status);
 
-  scheduleRefresh(); // wichtig für Family-Status
 }
 
 function syncButtons(index, status) {
@@ -418,4 +421,29 @@ function refreshAllSelects() {
       ts.setValue(currentValue, true);
     });
   });
+}
+
+function refreshSingleSelect(ts) {
+
+    const currentValue = ts.getValue();
+
+    ts.clearOptions();
+
+    pokemonList.forEach(p => {
+
+        const status = getFamilyEmojiStatus(p.familyId);
+
+        let emoji = "⚪";
+
+        if (status === "caught") emoji = "🟢";
+        if (status === "defeated") emoji = "💀";
+        if (status === "failed") emoji = "✕";
+
+        ts.addOption({
+            value: p.pokedexId,
+            text: `${emoji} ${p.name}`
+        });
+    });
+
+    ts.setValue(currentValue, true);
 }
